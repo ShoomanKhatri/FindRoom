@@ -1,0 +1,1603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+
+/*create button */
+.create {
+    position: absolute;
+    z-index: -1;
+    top: 14%;
+    left: 5%;
+    text-align: center;
+}
+
+.create button {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    background: rgb(64, 134, 225);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.create button:hover {
+    background: rgb(50, 108, 184);
+}
+.create button a{
+    text-decoration: none;
+    color:#fff;
+} 
+
+/* data table */
+.box {
+    width: 90%;
+    user-select: none;
+    height: auto;
+    padding: 4px;
+    position: absolute;
+    z-index: -1;
+    top: 21%;
+    left: 3%;
+}
+
+.box .cont {
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 1em;
+    text-align: left;
+    width:100%;
+    /* Ensure the table takes up 100% of the width */
+    text-align: left;
+}
+
+.box .cont td {
+    padding: 18px 6px;
+}
+
+.box table tbody tr td .post {
+    margin: auto;
+    border: 2px solid #dad3d382;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    width: 284px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.box .cont .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box .cont tbody tr {
+    border-radius: 4px;
+}
+.box table tbody tr td .post:hover {
+    border: 2px solid rgb(28, 148, 212);
+    box-shadow: 0 0 16px 8px rgba(170, 170, 170, 0.432);
+}
+
+.box table tbody tr td .des {
+    padding: 4px;
+}
+
+.box table tbody tr td .post .img {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.box table tbody tr td button{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(207, 33, 3);
+}
+
+.box table tbody tr td button:hover {
+    background: rgb(14, 147, 4);
+}
+.box table tbody tr td button a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* searched data  */
+.search {
+    width: 90%;
+    user-select: none;
+    height: auto;
+    padding: 4px;
+    position: absolute;
+    top: 21%;
+    left: 3%;
+    display: none;
+}
+
+.search .cont {
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 1em;
+    text-align: left;
+    width:100%;
+    /* Ensure the table takes up 100% of the width */
+    text-align: left;
+}
+
+.search .cont td {
+    padding: 18px 6px;
+}
+
+.search table tbody tr td .post {
+    margin: auto;
+    border: 2px solid #dad3d382;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    width: 284px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.search .cont .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.search .cont tbody tr {
+    border-radius: 4px;
+}
+.search table tbody tr td .post:hover {
+    border: 2px solid rgb(28, 148, 212);
+    box-shadow: 0 0 16px 8px rgba(170, 170, 170, 0.432);
+}
+
+.search table tbody tr td .des {
+    padding: 4px;
+}
+
+.search table tbody tr td .post .img {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.search table tbody tr td button {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(207, 33, 3);
+}
+
+.search table tbody tr td button:hover {
+    background: rgb(14, 147, 4);
+}
+
+
+@media (max-width:1280px) and (max-height:800px) {
+    .navi .name p {
+        font-size: 24px;
+    }
+
+    .navi .name .com {
+        font-size: 16px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 3px;
+        left: 21%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 12px;
+        left: 30%;
+        width: 280px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 280px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 240px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .bb {
+        position: absolute;
+        right: 14%;
+    }
+
+    .navi .bb li a {
+        font-size: 14px;
+    }
+
+    .navi .mbl {
+        display: none;
+    }
+
+    .create {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 17%;
+        left: 1%;
+    }
+}
+
+@media (max-width:1075px) and (height:554px) {
+    .navi .name p {
+        font-size: 24px;
+    }
+
+    .navi .name .com {
+        font-size: 16px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 3px;
+        left: 25%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 12px;
+        left: 35%;
+        width: 270px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 260px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 220px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .bb {
+        position: absolute;
+        right: 0;
+    }
+
+    .navi .bb li a {
+        font-size: 14px;
+    }
+
+    .navi .mbl {
+        display: none;
+    }
+}
+
+@media (max-width:1048px) {
+    .navi .name p {
+        font-size: 24px;
+    }
+
+    .navi .name .com {
+        font-size: 16px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 3px;
+        left: 25%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 12px;
+        left: 36%;
+        width: 240px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 220px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 170px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .bb {
+        position: absolute;
+        right: 0;
+    }
+
+    .navi .bb li a {
+        font-size: 14px;
+    }
+
+    .navi .mbl {
+        display: none;
+    }
+}
+
+@media (max-width:1006px) {
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 3px;
+        left: 24%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 12px;
+        left: 34%;
+        width: 200px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 190px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 140px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .bb {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .navi .mbl {
+        display: none;
+    }
+}
+
+@media (max-width:932px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 16%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 23%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 34%;
+        width: 360px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 350px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 300px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .bb {
+        position: absolute;
+        top: 4px;
+        right: 8%;
+    }
+    .navi{
+        height:100px;
+    }
+}
+
+@media (max-width:842px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 45%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 18%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 34%;
+        width: 360px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 350px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 300px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 4%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 310px;
+        right: 4%;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 4%;
+    }
+    .navi{
+        height:100px;
+    }
+    .upload{
+        position: absolute;
+        top:28%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border:none;
+        width: 300px;
+    }
+    .upload .top{
+        display: none;
+    }
+    .upload .details{
+        display: block;
+    }
+    .upload .details input[type=text]{
+        height:24px;
+        width:60%;
+    }
+    .upload .details .fle{
+        position: absolute;
+        top:18%;
+        right:0;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-25%;
+        left:20%;
+    }
+    .upload .details .below input, .upload .details .below button{
+        height:26px;
+        padding:0;
+    }
+}
+
+@media (max-width:752px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 40%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 20%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 38%;
+        width: 260px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 250px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 200px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 5%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 310px;
+        right: 5%;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 8%;
+    }
+
+    .create {
+        position: absolute;
+        top: 18%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+    .upload .details{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:25%;
+        min-width:260px;
+    }
+    .upload .details .left{
+        margin-top: -40px;
+        margin-left: -10px;
+    }
+    .upload .details .file{
+        position: absolute;
+        bottom:1.5%;
+        left:45%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-15%;
+        left:2%;
+    }
+}
+
+@media (max-width:615px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 40%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 16%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 36%;
+        width: 270px;
+        height: 40px;
+    }
+
+    .navi .btn .src {
+        width: 260px;
+        height: 34px;
+    }
+
+    .navi .btn .src input {
+        width: 210px;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 110px;
+        right: 4%;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 10%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 360px;
+        right: 4%;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 20%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 26%;
+        left: 0;
+    }
+    .upload .details{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:10%;
+        min-width:260px;
+    }
+    .upload .details .left{
+        margin-top: -40px;
+        margin-left: -10px;
+    }
+    .upload .details .file{
+        position: absolute;
+        bottom:1.5%;
+        left:45%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-15%;
+        left:2%;
+    }
+}
+
+@media (max-width:543px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 30%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 4%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 25%;
+        width: 280px;
+        height: 38px;
+    }
+
+    .navi .btn .src {
+        width: 270px;
+        height: 36px;
+    }
+
+    .navi .btn .src input {
+        width: 220px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 12%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 18%;
+        left: 20%;
+    }
+
+    .box {
+        position: absolute;
+        top: 23%;
+        left: 0;
+    }
+    .box .cont{
+        min-width: 500px;
+    }
+    .upload .details{
+        display: flex;
+        position: absolute;
+        top:50%;
+        left:10%;
+        min-width:400px;
+    }
+    .upload .details .file{
+        position: absolute;
+        bottom:1.5%;
+        right:45%;
+    }
+    /* .upload .details .left{
+        margin-top: -40px;
+        margin-left: -10px;
+    }
+   
+    .upload .details .below{
+        position: absolute;
+        bottom:-15%;
+        left:2%;
+    } */
+}
+
+@media (max-width:471px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 30%;
+    }
+
+    .navi {
+        height: 100px;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 4%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 60px;
+        left: 25%;
+        width: 280px;
+        height: 38px;
+    }
+
+    .navi .btn .src {
+        width: 270px;
+        height: 36px;
+    }
+
+    .navi .btn .src input {
+        width: 220px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 4%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 22%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 27%;
+        left: 0;
+    }
+    .box .cont{
+    min-width: 424px;
+    }
+    /* .upload{
+        position: absolute;
+        top:27%;
+        left:30%;
+        transform: translate(-50%,-50%);
+        border:none;
+        height:400px;
+        width: 300px;
+    } */
+    /* .upload .top{
+        display: none;
+    }
+    .upload .details{
+        display: block;
+    }
+    .upload .details input[type=text]{
+        height:26px;
+        width:60%;
+    }
+    .upload .details .fle{
+        position: absolute;
+        top:7%;
+        right:20%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-10%;
+        left:20%;
+    } */
+}
+
+@media (max-width:414px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 30%;
+    }
+
+    .navi {
+        height: 100px;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 4%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 64px;
+        left: 32%;
+        width: 200px;
+        height: 30px;
+    }
+
+    .navi .btn .src {
+        width: 190px;
+        height: 28px;
+    }
+
+    .navi .btn .src input {
+        width: 140px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 8%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 14%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+    .box .cont {
+        min-width: 400px;
+    }
+    .upload{
+        position: absolute;
+        top:26%;
+        left:30%;
+        transform: translate(-50%,-50%);
+        border:none;
+        height:400px;
+        width: 300px;
+    }
+    .upload .top{
+        display: none;
+    }
+    .upload .details{
+        display: block;
+    }
+    .upload .details input[type=text]{
+        height:26px;
+        width:60%;
+    }
+    .upload .details .fle{
+        position: absolute;
+        top:7%;
+        right:20%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-10%;
+        left:20%;
+    }
+    .upload .details .below input, .upload .details .below button{
+        height:26px;
+        padding:0;
+    }
+}
+
+@media (max-width:390px) {
+    .navi {
+        height: 100px;
+    }
+
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 30%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 4%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 64px;
+        left: 32%;
+        width: 170px;
+        height: 30px;
+    }
+
+    .navi .btn .src {
+        width: 160px;
+        height: 28px;
+    }
+
+    .navi .btn .src input {
+        width: 110px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 8%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 18%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    .box .cont {
+        min-width: 370px;
+        margin-bottom: 30%;
+    }
+    .upload{
+        position: absolute;
+        top:28%;
+        left:30%;
+        transform: translate(-50%,-50%);
+        border:none;
+        width: 300px;
+    }
+    .upload .top{
+        display: none;
+    }
+    .upload .details{
+        display: block;
+    }
+    .upload .details input[type=text]{
+        height:24px;
+        width:60%;
+    }
+    .upload .details .fle{
+        position: absolute;
+        top:7%;
+        right:20%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-10%;
+        left:20%;
+    }
+    .upload .details .below input, .upload .details .below button{
+        height:26px;
+        padding:0;
+    }
+}
+@media (max-width:375px) {
+    .navi {
+        height: 100px;
+    }
+
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 30%;
+    }
+
+    .navi .name p {
+        font-size: 20px;
+    }
+
+    .navi .name .com {
+        font-size: 12px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 4%;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 64px;
+        left: 32%;
+        width: 170px;
+        height: 30px;
+    }
+
+    .navi .btn .src {
+        width: 160px;
+        height: 28px;
+    }
+
+    .navi .btn .src input {
+        width: 110px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 8%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 18%;
+        left: 4%;
+    }
+
+    .box {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    .box .cont {
+        min-width: 370px;
+        margin-bottom: 30%;
+    }
+    .upload{
+        position: absolute;
+        top:34%;
+        left:30%;
+        transform: translate(-50%,-50%);
+        border:none;
+        width: 300px;
+    }
+    .upload .top{
+        display: none;
+    }
+    .upload .details{
+        display: block;
+    }
+    .upload .details input[type=text]{
+        height:24px;
+        width:60%;
+    }
+    .upload .details .fle{
+        position: absolute;
+        top:7%;
+        right:20%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-10%;
+        left:20%;
+    }
+    .upload .details .below input, .upload .details .below button{
+        height:26px;
+        padding:0;
+    }
+}
+
+@media (max-width:284px) and (max-height:653px) {
+    .navi .name {
+        position: absolute;
+        top: 3px;
+        left: 25%;
+    }
+
+    .navi .name p {
+        font-size: 18px;
+    }
+
+    .navi .name .com {
+        font-size: 10px;
+    }
+
+    .navi .home {
+        position: absolute;
+        top: 50px;
+        left: 3%;
+        width: 40px;
+    }
+
+    .navi .home .sort {
+        background: none;
+    }
+
+    .navi .home i {
+        font-size: 14px;
+        background: none;
+    }
+
+    .navi .home input {
+        display: none;
+    }
+
+    .navi .btn {
+        position: absolute;
+        top: 64px;
+        left: 24%;
+        width: 170px;
+        height: 28px;
+    }
+
+    .navi .btn .src {
+        width: 160px;
+        height: 26px;
+    }
+
+    .navi .btn .src input {
+        width: 120px;
+    }
+
+    .navi .btn .src input::placeholder {
+        text-align: center;
+    }
+
+    .navi .btn .src input i {
+        margin-left: 4px;
+    }
+
+    .navi .pot {
+        display: none;
+    }
+
+    nav .navi .bb {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .navi .bb li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    nav .navi .mbl {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 8%;
+    }
+
+    .navi .pot .other {
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 0;
+    }
+
+    nav .navi .other li {
+        width: 90%;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .create {
+        position: absolute;
+        top: 18%;
+        left: 4%;
+    }
+    .upload .details{
+        display: block;
+        position: absolute;
+        top:25%;
+        left:25%;
+        min-width:260px;
+    }
+    .upload .details .left{
+        margin-top: -40px;
+        margin-left: -10px;
+    }
+    .upload .details .file{
+        position: absolute;
+        bottom:1.5%;
+        left:45%;
+    }
+    .upload .details .below{
+        position: absolute;
+        bottom:-15%;
+        left:2%;
+    }
+
+    .box {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+    .box .cont{
+        min-width: 264px;
+    }
+    .box .cont .post{
+        width:264px;
+    }
+    .box .cont .post img{
+        width:260px;
+    }
+}

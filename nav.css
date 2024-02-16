@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    width:100%;
+}
+
+/* navbar  */
+
+
+.navi {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #fff;
+    justify-content: space-around;
+}
+
+.navi .name {
+    position: absolute;
+    top: 3px;
+    left: 5%;
+    display: flex;
+}
+
+.navi .name .logo {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 50px;
+    color: rgb(224, 63, 63);
+}
+
+.navi .name .logo .nep {
+    font-size: 28px;
+    line-height: 50px;
+    color: rgb(3, 64, 209);
+}
+
+.navi .name .com {
+    color: rgb(11, 207, 40);
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.navi .home {
+    display: flex;
+    position: fixed;
+    width: 140px;
+    top: 3px;
+    left: 26%;
+}
+
+.navi .home a {
+    font-size: 14px;
+    line-height: 53px;
+    color: #2b2424;
+    text-decoration: none;
+}
+
+.navi .home i{
+    font-size: 14px;
+    cursor: pointer;
+    margin-right:8px;
+}
+
+.navi .btn {
+    position:absolute;
+    top: 10px;
+    left: 35%;
+}
+
+.navi .src {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    background: #fff;
+    padding: 0px 6px;
+    border: 1px solid rgba(80, 81, 81, 0.591);
+    align-items: center;
+    border-radius: 40px;
+}
+
+.navi .src button{
+    outline: none;
+    width: 320px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navi .src button:hover {
+    color: rgb(0, 102, 255);
+}
+
+.navi .src button a{
+    text-decoration: none;
+    color:black;
+}
+.navi .src button a i{
+    margin-left:8px;
+}
+.navi .bb {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+}
+
+.navi ul li {
+    line-height: 50px;
+    list-style: none;
+    margin-right: 16px;
+}
+
+nav .navi ul li i {
+    padding-left: 4px;
+}
+
+.navi ul li a {
+    text-decoration: none;
+    color: #2b2424;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navi ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(95, 25, 25);
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navi ul li a:hover:after {
+    width: 100%;
+}
+
+nav .navi ul li a i {
+    padding-right: 4px;
+}
+
+.navi .pot .other {
+    display: none;
+    width: 140px;
+}
+
+.navi .pot .other li {
+    line-height: 50px;
+    list-style: none;
+}
+
+nav .navi .pot .other li i {
+    padding: 0px 4px;
+    font-size: 18px;
+}
+
+.navi .pot .other li a {
+    text-decoration: none;
+    color: #2b2424;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .navi .mbl {
+    position: absolute;
+    top: 13px;
+    right: 24px;
+    display: none;
+}

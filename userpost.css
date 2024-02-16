@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top:14%;
+    z-index: -1;
+    width: 100%;
+}
+
+#tabs {
+    width: 96%;
+}
+
+.box {
+    width: 100%;
+    user-select: none;
+    height: auto;
+    padding: 4px;
+}
+
+.box .cont {
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+    /* Ensure the table takes up 100% of the width */
+    text-align: left;
+}
+
+.box .cont td {
+    padding: 18px 6px;
+}
+
+.box table tbody tr td .post {
+    margin: auto;
+    border: 2px solid #dad3d382;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    width: 284px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box .cont .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box .cont tbody tr {
+    border-radius: 4px;
+}
+
+.box table tbody tr td .post:hover {
+    border: 2px solid rgb(232, 232, 223);
+    box-shadow: 0 0 12px 6px rgba(170, 170, 170, 0.432);
+}
+
+.box table tbody tr td .des {
+    padding: 4px;
+}
+
+.box table tbody tr td .post .img {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.box table tbody tr td button {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(207, 125, 3);
+}
+
+#tabs-2 .box table tbody tr td #b1,#tabs-3 .box table tbody tr td #b1{
+    background: rgb(7, 149, 23);
+    cursor: default;
+    height:33px;
+}
+#tabs-2 .box table tbody tr td #b2,#tabs-3 .box table tbody tr td #b2{
+    background: rgb(173, 28, 8);
+    cursor: default;
+}
+#tabs-2 .box table tbody tr td button i,#tabs-3 .box table tbody tr td button i{
+    margin-right:8px;
+}
+.box table tbody tr td button:hover {
+    background: rgb(136, 85, 9);
+}
+
+.box table tbody tr td button a {
+    text-decoration: none;
+    color: #fff;
+}
